@@ -1,0 +1,292 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Bar Graph Vertical</h1>
+      <ngx-charts-bar-vertical
+        [results]="productSales"
+        [view]="view"
+        [scheme]="colorScheme"
+        [schemeType]="schemeType"
+        [gradient]="gradient"
+        [xAxis]="xAxis"
+        [yAxis]="yAxis"
+        [legend]="legend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [legendTitle]="legendTitle"
+        [legendPosition]="legendPosition"
+        [animations]="animations"
+        [showGridLines]="showGridLines"
+        [trimXAxisTicks]="trimXAxisTicks"
+        [trimYAxisTicks]="trimYAxisTicks"
+        [rotateXAxisTicks]="rotateXAxisTicks"
+        [maxXAxisTickLength]="maxXAxisTickLength"
+        [maxYAxisTickLength]="maxYAxisTickLength"
+        [xAxisTickFormatting]="formatString"
+        [yAxisTickFormatting]="formatNumber"
+        [yAxisTicks]="yAxisTicks"
+        [showDataLabel]="showDataLabel"
+        [barPadding]="barPadding"
+        [tooltipDisabled]="tooltipDisabled"
+        [roundEdges]="roundEdges"
+        (select)="onSelect($event)"
+        (activate)="onActivate($event)"
+        (deactivate)="onDeactivate($event)"
+      ></ngx-charts-bar-vertical>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Bar Graph Horizontal</h1>
+      <ngx-charts-bar-horizontal
+        [results]="productSales"
+        [view]="view"
+        [scheme]="colorScheme"
+        [schemeType]="schemeType"
+        [gradient]="gradient"
+        [xAxis]="xAxis"
+        [yAxis]="yAxis"
+        [legend]="legend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="yAxisLabel"
+        [yAxisLabel]="xAxisLabel"
+        [legendTitle]="legendTitle"
+        [legendPosition]="legendPosition"
+        [animations]="animations"
+        [showGridLines]="showGridLines"
+        [trimXAxisTicks]="trimXAxisTicks"
+        [trimYAxisTicks]="trimYAxisTicks"
+        [rotateXAxisTicks]="rotateXAxisTicks"
+        [maxXAxisTickLength]="maxXAxisTickLength"
+        [maxYAxisTickLength]="maxYAxisTickLength"
+        [xAxisTickFormatting]="formatNumber"
+        [yAxisTickFormatting]="formatString"
+        [xAxisTicks]="yAxisTicks"
+        [showDataLabel]="showDataLabel"
+        [barPadding]="barPadding"
+        [tooltipDisabled]="tooltipDisabled"
+        [roundEdges]="roundEdges"
+        (select)="onSelect($event)"
+        (activate)="onActivate($event)"
+        (deactivate)="onDeactivate($event)"
+      ></ngx-charts-bar-horizontal>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Bar Graph Vertical Stacked</h1>
+      <ngx-charts-bar-vertical-stacked
+        [results]="productSalesMulti"
+        [view]="view"
+        [scheme]="colorScheme"
+        [schemeType]="schemeType"
+        [gradient]="gradient"
+        [xAxis]="xAxis"
+        [yAxis]="yAxis"
+        [legend]="legend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [legendTitle]="legendTitle"
+        [legendPosition]="legendPosition"
+        [animations]="animations"
+        [showGridLines]="showGridLines"
+        [trimXAxisTicks]="trimXAxisTicks"
+        [trimYAxisTicks]="trimYAxisTicks"
+        [rotateXAxisTicks]="rotateXAxisTicks"
+        [maxXAxisTickLength]="maxXAxisTickLength"
+        [maxYAxisTickLength]="maxYAxisTickLength"
+        [xAxisTickFormatting]="formatString"
+        [yAxisTickFormatting]="formatNumber"
+        [yAxisTicks]="yAxisTicks"
+        [showDataLabel]="showDataLabel"
+        [barPadding]="barPadding"
+        [tooltipDisabled]="tooltipDisabled"
+      ></ngx-charts-bar-vertical-stacked>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Bar Graph Horizontal Stacked</h1>
+      <ngx-charts-bar-horizontal-stacked
+        [results]="productSalesMulti"
+        [view]="view"
+        [scheme]="colorScheme"
+        [schemeType]="schemeType"
+        [gradient]="gradient"
+        [xAxis]="xAxis"
+        [yAxis]="yAxis"
+        [legend]="legend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="yAxisLabel"
+        [yAxisLabel]="xAxisLabel"
+        [legendTitle]="legendTitle"
+        [legendPosition]="legendPosition"
+        [animations]="animations"
+        [showGridLines]="showGridLines"
+        [trimXAxisTicks]="trimXAxisTicks"
+        [trimYAxisTicks]="trimYAxisTicks"
+        [rotateXAxisTicks]="rotateXAxisTicks"
+        [maxXAxisTickLength]="maxXAxisTickLength"
+        [maxYAxisTickLength]="maxYAxisTickLength"
+        [xAxisTickFormatting]="formatNumber"
+        [yAxisTickFormatting]="formatString"
+        [xAxisTicks]="yAxisTicks"
+        [showDataLabel]="showDataLabel"
+        [barPadding]="barPadding"
+        [tooltipDisabled]="tooltipDisabled"
+      ></ngx-charts-bar-horizontal-stacked>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Bar Graph Vertical Normalized</h1>
+      <ngx-charts-bar-vertical-normalized
+        [results]="productSalesMulti"
+        [view]="view"
+        [scheme]="colorScheme"
+        [schemeType]="schemeType"
+        [gradient]="gradient"
+        [xAxis]="xAxis"
+        [yAxis]="yAxis"
+        [legend]="legend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [legendTitle]="legendTitle"
+        [legendPosition]="legendPosition"
+        [animations]="animations"
+        [showGridLines]="showGridLines"
+        [trimXAxisTicks]="trimXAxisTicks"
+        [trimYAxisTicks]="trimYAxisTicks"
+        [rotateXAxisTicks]="rotateXAxisTicks"
+        [maxXAxisTickLength]="maxXAxisTickLength"
+        [maxYAxisTickLength]="maxYAxisTickLength"
+        [xAxisTickFormatting]="formatString"
+        [yAxisTickFormatting]="formatNumber"
+        [yAxisTicks]="yAxisTicks"
+        [barPadding]="barPadding"
+        [tooltipDisabled]="tooltipDisabled"
+      ></ngx-charts-bar-vertical-normalized>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Bar Graph Horizontal Normalized</h1>
+      <ngx-charts-bar-horizontal-normalized
+        [results]="productSalesMulti"
+        [view]="view"
+        [scheme]="colorScheme"
+        [schemeType]="schemeType"
+        [gradient]="gradient"
+        [xAxis]="xAxis"
+        [yAxis]="yAxis"
+        [legend]="legend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="yAxisLabel"
+        [yAxisLabel]="xAxisLabel"
+        [legendTitle]="legendTitle"
+        [legendPosition]="legendPosition"
+        [animations]="animations"
+        [showGridLines]="showGridLines"
+        [trimXAxisTicks]="trimXAxisTicks"
+        [trimYAxisTicks]="trimYAxisTicks"
+        [rotateXAxisTicks]="rotateXAxisTicks"
+        [maxXAxisTickLength]="maxXAxisTickLength"
+        [maxYAxisTickLength]="maxYAxisTickLength"
+        [xAxisTickFormatting]="formatNumber"
+        [yAxisTickFormatting]="formatString"
+        [xAxisTicks]="yAxisTicks"
+        [barPadding]="barPadding"
+        [tooltipDisabled]="tooltipDisabled"
+      ></ngx-charts-bar-horizontal-normalized>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Bar Graph Vertical 2d</h1>
+      <ngx-charts-bar-vertical-2d
+        [results]="productSalesMulti"
+        [view]="view"
+        [scheme]="colorScheme"
+        [schemeType]="schemeType"
+        [gradient]="gradient"
+        [xAxis]="xAxis"
+        [yAxis]="yAxis"
+        [legend]="legend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [legendTitle]="legendTitle"
+        [legendPosition]="legendPosition"
+        [animations]="animations"
+        [showGridLines]="showGridLines"
+        [trimXAxisTicks]="trimXAxisTicks"
+        [trimYAxisTicks]="trimYAxisTicks"
+        [rotateXAxisTicks]="rotateXAxisTicks"
+        [maxXAxisTickLength]="maxXAxisTickLength"
+        [maxYAxisTickLength]="maxYAxisTickLength"
+        [xAxisTickFormatting]="formatString"
+        [yAxisTickFormatting]="formatNumber"
+        [yAxisTicks]="yAxisTicks"
+        [barPadding]="barPadding"
+        [tooltipDisabled]="tooltipDisabled"
+      ></ngx-charts-bar-vertical-2d>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Bar Graph Horizontal 2d</h1>
+      <ngx-charts-bar-horizontal-2d
+        [results]="productSalesMulti"
+        [view]="view"
+        [scheme]="colorScheme"
+        [schemeType]="schemeType"
+        [gradient]="gradient"
+        [xAxis]="xAxis"
+        [yAxis]="yAxis"
+        [legend]="legend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="yAxisLabel"
+        [yAxisLabel]="xAxisLabel"
+        [legendTitle]="legendTitle"
+        [legendPosition]="legendPosition"
+        [animations]="animations"
+        [showGridLines]="showGridLines"
+        [trimXAxisTicks]="trimXAxisTicks"
+        [trimYAxisTicks]="trimYAxisTicks"
+        [rotateXAxisTicks]="rotateXAxisTicks"
+        [maxXAxisTickLength]="maxXAxisTickLength"
+        [maxYAxisTickLength]="maxYAxisTickLength"
+        [xAxisTickFormatting]="formatNumber"
+        [yAxisTickFormatting]="formatString"
+        [xAxisTicks]="yAxisTicks"
+        [barPadding]="barPadding"
+        [tooltipDisabled]="tooltipDisabled"
+      ></ngx-charts-bar-horizontal-2d>
+    </div>
+  </div>
+</div>

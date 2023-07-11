@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Gauge Chart</h1>
+      <ngx-charts-gauge
+        [view]="view"
+        [scheme]="colorScheme"
+        [results]="productSales"
+        [legend]="legend"
+        [legendPosition]="legendPosition"
+        (select)="onSelect($event)"
+        (activate)="onActivate($event)"
+        (deactivate)="onDeactivate($event)"
+      >
+      </ngx-charts-gauge>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Linear Gauge Chart</h1>
+      <ngx-charts-linear-gauge
+        [view]="view"
+        [scheme]="colorScheme"
+        [value]="value"
+        [previousValue]="previousValue"
+        (select)="onSelect($event)"
+        [units]="units"
+      >
+      </ngx-charts-linear-gauge>
+    </div>
+  </div>
+</div>

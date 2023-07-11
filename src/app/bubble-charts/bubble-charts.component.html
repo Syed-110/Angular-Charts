@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Bubble Chart</h1>
+      <ngx-charts-bubble-chart
+        [view]="view"
+        [scheme]="colorScheme"
+        [results]="bubbleData"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [legend]="showLegend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [yScaleMin]="yScaleMin"
+        [yScaleMax]="yScaleMax"
+        [minRadius]="minRadius"
+        [maxRadius]="maxRadius"
+        (select)="onSelect($event)"
+        (activate)="onActivate($event)"
+        (deactivate)="onDeactivate($event)"
+      >
+      </ngx-charts-bubble-chart>
+    </div>
+  </div>
+</div>

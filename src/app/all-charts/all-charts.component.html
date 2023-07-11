@@ -1,0 +1,6 @@
+<ejs-chart [primaryXAxis]="xAxis" [primaryYAxis]="yAxis" [title]="chartTitle" [legendSettings]="legend" [tooltip]="tooltipSetting">
+    <e-series-collection>
+        <e-series type="Line" [dataSource]="data" xName="month" yName="sales" name="Sales" [marker]="dataLabelMarker"></e-series>
+    </e-series-collection>
+</ejs-chart>
+<!-- https://www.youtube.com/watch?v=uAubTKfbBy8&list=PLDzXQPWT8wECEF2uULOFlnk2g25QbNN0U&ab_channel=Syncfusion%2CInc -->
